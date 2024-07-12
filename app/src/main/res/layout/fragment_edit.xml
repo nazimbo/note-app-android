@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.edit.EditFragment"
+    android:background="@color/black_light"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/roundedrect"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_note" />
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/roundedrect"
+        android:backgroundTint="@color/white"
+        android:gravity="left|top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mettre à jour"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/roundedrect"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_note" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >
