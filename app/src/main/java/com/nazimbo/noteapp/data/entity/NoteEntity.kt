@@ -5,9 +5,9 @@ import androidx.room.PrimaryKey
 import java.time.LocalDateTime
 
 /**
- * Entity Note dans la base de données
+ * Représente une note dans la base de données.
+ * Chaque note est identifiée par un identifiant unique, contient un titre, le contenu de la note, et la date de dernière mise à jour.
  */
-
 @Entity(tableName = "NoteEntity")
 data class NoteEntity(
     @PrimaryKey(autoGenerate = true) var id: Long = 0,
